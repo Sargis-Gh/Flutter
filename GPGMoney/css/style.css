@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(30, 30, 30);
+    display: grid;
+    grid-template-rows: 70px 1fr;
+}
+
+#userInfo {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+#userInfo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    /* border: 10px solid rgb(116, 120, 122); */
+    /* box-shadow: 0px 0px 50px rgb(252, 256, 53); */
+    /* box-shadow: 0px 0px 50px rgb(165, 169, 171); */
+}
+
+#gameArea {
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-rows: 120px 1fr auto auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    /* border: 1px solid rgb(252, 256, 53); */
+    border: 1px solid rgb(165, 169, 171);
+    border-radius: 50px 50px 0 0;
+    /* box-shadow: 0px 0px 10px rgb(252, 256, 53); */
+    box-shadow: 0px 0px 40px rgb(165, 169, 171);
+    overflow-y: scroll;
+}
+
+#coins {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    color: rgb(245, 202, 125);
+    gap: 5px;
+}
+
+#coins img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+#touchBoard img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 10px solid rgb(116, 120, 122);
+    /* box-shadow: 0px 0px 50px rgb(252, 256, 53); */
+    box-shadow: 0px 0px 30px rgb(165, 169, 171);
+}
+
+#touchBoard img:active {
+    box-shadow: 0px 0px 50px rgb(245, 202, 125);
+}
+
+#energy {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-self: start;
+    margin-top: 30px;
+    display: grid;
+    gap: 3px;
+    padding: 20px 0px;
+    color: white;
+}
+
+#energy h5 {
+    justify-self: start;
+    color: rgb(245, 202, 125);
+}
+
+#menueBar {
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+}
+
+#viewBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    padding: 20px 10px;
+    border: 1px solid rgb(116, 120, 122);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(165, 169, 171);
+    color: rgb(245, 202, 125);
+    background-color: rgb(116, 120, 122);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reklamBox {
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgb(116, 120, 122);
+    border-radius: 5px;
+}
+
+.hiden {
+    display: none;
+}
